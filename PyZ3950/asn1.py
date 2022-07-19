@@ -352,7 +352,7 @@ class CtxBase:
     def get_codec (self, base_tag):
         def default_enc (x):
             if isinstance (x, str):
-                return (x.encode ('ascii'), 0)
+                return (x.encode ('utf-8'), 0)
             elif isinstance (x, str):
                 return (x.encode ('utf-8'), 0)
             return (x, 0)
